@@ -10,7 +10,7 @@ logger = logging.getLogger(__name__)
 
 app = FastAPI(title="Extractor API")
 
-MAX_ATTEMPTS = 2
+MAX_ATTEMPTS = 1
 
 PROMPT = """Extract information from the text below. Answer ONLY with a JSON object with these keys:
 - "title": short title (string)
